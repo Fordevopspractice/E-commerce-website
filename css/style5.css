@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: #ff3f6c;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.order-summary-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.order-summary-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.order-summary {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.item-image {
+    flex: 0 0 100px;
+}
+
+.item-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.item-details {
+    flex: 1;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.item-details h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.item-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.price {
+    color: #ff3f6c;
+    font-weight: bold;
+}
+
+.order-total {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.order-total p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.checkout-button {
+    background-color: #ff3f6c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.checkout-button:hover {
+    background-color: #e2355b;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
