@@ -9,12 +9,16 @@
 <body>
     <header class="header">
         <div class="logo">Myntra</div>
-        <div class="cart-title">My Cart</div>
-        <div class="user-profile">Profile</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products, brands, and more">
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/30" alt="Profile Picture">
+        </div>
     </header>
     <main class="cart-container">
         <section class="cart-items">
-            <h2>Shopping Bag</h2>
+            <h2>My Shopping Bag</h2>
             <div class="cart-item">
                 <img src="https://via.placeholder.com/100" alt="Product Image">
                 <div class="item-details">
@@ -22,28 +26,28 @@
                     <p>Size: M</p>
                     <p>Price: $49.99</p>
                 </div>
-                <button class="remove-button">Remove</button>
-            </div>
-            <div class="cart-item">
-                <img src="https://via.placeholder.com/100" alt="Product Image">
-                <div class="item-details">
-                    <h3>Product Name</h3>
-                    <p>Size: L</p>
-                    <p>Price: $59.99</p>
+                <div class="item-actions">
+                    <button class="quantity-button">-</button>
+                    <input type="text" value="1" class="quantity-input">
+                    <button class="quantity-button">+</button>
+                    <button class="remove-button">Remove</button>
                 </div>
-                <button class="remove-button">Remove</button>
             </div>
+            <!-- Add more cart items here -->
         </section>
         <aside class="cart-summary">
             <h2>Summary</h2>
-            <p>Subtotal: $109.98</p>
-            <p>Delivery: Free</p>
-            <p><strong>Total: $109.98</strong></p>
+            <div class="summary-details">
+                <p>Subtotal: $49.99</p>
+                <p>Discount: $5.00</p>
+                <p>Delivery: Free</p>
+                <p><strong>Total: $44.99</strong></p>
+            </div>
             <button class="checkout-button">Proceed to Checkout</button>
         </aside>
     </main>
     <footer class="footer">
-        <p>&copy; 2024 Myntra</p>
+        <p>&copy; 2024 Myntra. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
